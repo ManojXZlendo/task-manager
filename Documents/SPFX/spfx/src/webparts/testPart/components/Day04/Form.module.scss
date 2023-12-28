@@ -1,0 +1,26 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/_SPFabricCore.scss';
+
+:root {
+    --textColor: #ccc
+}
+
+.gridContainer {
+    @include ms-Fabric;
+
+    // Base styles
+    @include ms-Grid;
+
+    .gridRow {
+        @include ms-Grid-row;
+
+        .gridCol {
+            @include ms-Grid-col;
+            border: 1px solid #ccc;
+            padding: 10px;
+
+            @include ms-lg12; // Large screens
+            @include ms-md6; // Medium screens
+            @include ms-sm12; // Small screens
+        }
+    }
+}
